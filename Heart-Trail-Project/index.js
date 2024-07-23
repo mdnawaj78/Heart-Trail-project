@@ -33,22 +33,13 @@ let careersIndex = 0, characterIndex = 0;
 
 // calander section
 
-const monthName = document.getElementById("month-name");
-const dayName  =document.getElementById("day-name");
-const dayNumber = document.getElementById("day");
-const yearNumber = document.getElementById("year");
+const setDateText = (id, options) => document.getElementById(id).innerText = new Date().toLocaleString("en", options);
 
-const date = new Date();
-const months = date.getMonth()
+setDateText("month-name", { month: "long" });
+setDateText("day-name", { weekday: "long" });
+document.getElementById("day").innerText = new Date().getDate();
+document.getElementById("year").innerText = new Date().getFullYear();
 
-monthName.innerText = date.toLocaleString("en",{
-    month: "long"
-} )
 
-dayName.innerText= date.toLocaleString("en" , {
-    weekday: "long"
-});
 
-dayNumber.innerText = date.getDate();
 
-yearNumber.innerText = date.getFullYear();
