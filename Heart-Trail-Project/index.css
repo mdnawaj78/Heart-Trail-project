@@ -40,7 +40,45 @@ span{
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    /* height: 100vh; */
     font-family: "Roboto Mono", monospace;
     
+}
+
+/* calander css */
+
+.calender-container {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: cursive;
+    
+}
+.calender-container p{
+    color: #fff;
+
+}
+.calender-container-box{
+    border: #fff 2px solid;
+    width: 300px;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px #fff;
+    overflow: hidden;
+}
+.month-name{
+    margin: 0;
+    padding: 10px;
+    background-color: #FaDa;
+    font-size: 30px;
+    font-weight: bold;
+}
+.day-name{
+    font-size: 20px;
+    color: darkgray;
+}
+.day{
+    font-size: 80px;
+    margin: 0;
 }

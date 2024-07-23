@@ -29,3 +29,26 @@ let careersIndex = 0, characterIndex = 0;
     setTimeout(updateText, 300);
 })();
 
+
+
+// calander section
+
+const monthName = document.getElementById("month-name");
+const dayName  =document.getElementById("day-name");
+const dayNumber = document.getElementById("day");
+const yearNumber = document.getElementById("year");
+
+const date = new Date();
+const months = date.getMonth()
+
+monthName.innerText = date.toLocaleString("en",{
+    month: "long"
+} )
+
+dayName.innerText= date.toLocaleString("en" , {
+    weekday: "long"
+});
+
+dayNumber.innerText = date.getDate();
+
+yearNumber.innerText = date.getFullYear();
